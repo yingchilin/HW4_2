@@ -1,0 +1,123 @@
+/*
+File: style.css
+GUI Assignment: A CSS file that style the table and form with readability.
+Yingchi Lin, UMass Lowell Computer Science, yingchi_Lin@student.uml.edu
+Copyright (c) 2022 by Yingchi. All rights reserved. May be freely copied or excerpted for educational purposes with credit to the author.
+June 23, 2022
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1rem;
+	background-color: whitesmoke;
+	min-height: 100px;
+}
+
+
+.container {
+	background-color: white;
+	border-radius: 8px;
+	box-shadow: black 0px 2px 5px -1px, gray 0px 1px 3px -1px;
+	width: 350px;
+    margin: 40px;
+}
+
+/* form */
+form {
+	max-width: 700px;
+	margin: 10px;
+	padding: 10px;
+    color: #111;
+}
+
+form h2,h3 {
+	padding: 5px 0;
+	font-weight: normal;
+	text-align: center;
+	color: rgb(32, 32, 155);
+}
+
+/* field */
+.field {
+	margin-bottom: 9px;
+}
+
+/* labels */
+label {
+	display: inline-block;
+	margin-bottom: 5px;
+	vertical-align: top;
+	width: 100%;
+}
+  
+label span {
+    font-size: 1rem;
+}
+  
+label.error {
+      color: red;
+      font-size: 1rem;
+      display: block;
+      margin-top: 5px;
+}
+  
+input.error, textarea.error {
+      border: 1px dashed green;
+      font-weight: 300;
+      color: red;
+}
+
+/* input and textarea */
+input,textarea,select {
+    width: 100%;
+	font-family: inherit;
+	font-size: 1rem;
+	border: solid 1px #ccc;
+	border-radius: 3px;
+	display: inline-block;
+	padding: 10px 7px;
+}
+
+/* scrollable container */
+.table-wrapper
+{
+       margin: 40px;
+       width: 708px;
+       height: 300px;
+       overflow: auto;
+}
+
+/* table */
+#mtable {
+      font-family: Arial, Helvetica, sans-serif;
+      border-collapse: collapse;
+}
+
+
+#mtable td, #mtable th {
+      border: 1px solid #ddd;
+      padding: 8px;
+}
+
+#mtable tr:nth-child(1){ background-color: #179ba8;}
+#mtable th:nth-child(1){ background-color: #179ba8;}
+#mtable tr:hover { background-color: #f4e69a;}
+
+#remove:hover {background-color: orange;}
+#generate:hover {background-color: orange;}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,80 @@
+<!--
+File: index.html
+GUI Assignment: Creating an Interactive Dynamic Table with jQuery UI Slider and Tab Widgets
+Yingchi Lin, UMass Lowell Computer Science, yingchi_Lin@student.uml.edu
+Copyright (c) 2022 by Yingchi. All rights reserved. May be freely copied or excerpted for educational purposes with credit to the author.
+June 15, 2022
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Multiplication Table Generator</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+  </head>
+  <body>
+    
+    <!--create a form that ask users to enter some information-->
+    <div class="container">
+        <form id="input">
+            <h2>Interactive Dynamic Table</h2>
+            <h3>Please enter the table ranges </h3>
+            <br>
+            <div class="field">
+                <label for="min_col">Minimum Column Value</label>
+                <input type="number" id="min_col" name="min_col" onchange="multiplicationTable()"/>
+                <div id="min_col_slider" class="slider"></div>
+            </div>
+            <div class="field">
+                <label for="max_col">Maximum Column Value</label>
+                <input type="number" id="max_col" name="max_col" onchange="multiplicationTable()"/>
+                <div id="max_col_slider" class="slider"></div>
+            </div>
+            <div class="field">
+                <label for="min_row">Minimum Row Value</label>
+                <input type="number" id="min_row" name="min_row" onchange="multiplicationTable()"/>
+                <div id="min_row_slider" class="slider"></div>
+            </div>
+            <div class="field">
+                <label for="max_row">Maximum Row Value</label>
+                <input type="number" id="max_row" name="max_row" onchange="multiplicationTable()"/>
+                <div id="max_row_slider" class="slider"></div>
+            </div>
+            <div class="field">
+                <input id="generate" type="button" value="Save Table" />
+            </div>
+        </form>   
+    </div>
+
+    <!--multiplication table-->
+    <div class="table-wrapper">
+    <div id="result"></div> 
+    </div>
+
+    <!--Remove all tabs button-->
+    <input id="remove" type="button" value="Remove all tabs" onclick="Remove()"/>
+    
+    <!--tabs area-->
+    <div id="myTabs">
+        <ul class="tabs-nav">         
+         
+        </ul>           
+          
+    </div>
+
+
+    <!-- CDNs for jquery, jquery validate plugin, jquery ui and jquery ui css -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.1/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+
+    
+
+    <script src="js/script.js" charset="utf-8"></script>
+    
+  </body>
+</html>
