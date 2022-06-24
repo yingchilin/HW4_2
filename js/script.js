@@ -1,6 +1,6 @@
 /*
 File: script.js
-GUI Assignment: Get user inputs from the form and use them to generate the multiplication table.
+GUI Assignment: Use jQuery Plugin/UI to generate dynamic multiplication table based on user inputs and save them in a jQuery UI tabbed interface.
 Yingchi Lin, UMass Lowell Computer Science, yingchi_Lin@student.uml.edu
 Copyright (c) 2022 by Yingchi. All rights reserved. May be freely copied or excerpted for educational purposes with credit to the author.
 June 23, 2022
